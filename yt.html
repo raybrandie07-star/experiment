@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube 2005 (Classic Look)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e2e2e2;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+    header input {
+      padding: 6px;
+      width: 300px;
+    }
+    header button {
+      padding: 6px 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .video {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .video img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_logo_2005.svg" alt="YouTube Logo">
+    <div>
+      <input type="text" placeholder="Search videos...">
+      <button>Search</button>
+      <button>Upload</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Featured Videos</h2>
+    <div class="video-grid">
+      <div class="video">
+        <img src="https://via.placeholder.com/200x120.png?text=Video+1" alt="Video 1">
+        <p><b>Me at the zoo</b></p>
+        <small>by Jawed Karim</small>
+      </div>
+      <div class="video">
+        <img src="https://via.placeholder.com/200x120.png?text=Video+2" alt="Video 2">
+        <p><b>Funny Cat</b></p>
+        <small>by user123</small>
+      </div>
+      <div class="video">
+        <img src="https://via.placeholder.com/200x120.png?text=Video+3" alt="Video 3">
+        <p><b>Cool Skate Trick</b></p>
+        <small>by skaterguy</small>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
